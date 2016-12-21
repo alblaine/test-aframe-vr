@@ -8,7 +8,7 @@
   </head>
   <body>
 
-      <a-scene>
+      <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
         <a-assets>
         <a-asset-item id="mini-house-obj" src="model/mini-house.obj"></a-asset-item>
         <a-asset-item id="mini-house-mtl" src="model/mini-house.mtl"></a-asset-item>
@@ -18,9 +18,6 @@
       <!--add a camera that will allow you to use keys WASDF to move-->
 
       <a-camera></a-camera>
-
-      <!--enable viewer to look at stuff -->
-      <a-entity camera look-controls></a-entity>
 
       <!--add a sky color (sky blue)-->
 
