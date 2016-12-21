@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mini House Walk-Through</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+  </head>
+  <body>
+
+      <a-scene>
+        <a-assets>
+        <a-asset-item id="mini-house-obj" src="/mini-house-obj/mini-house.obj"></a-asset-item>
+        <a-asset-item id="mini-house-mtl" src="/mini-house-obj/mini-house.mtl"></a-asset-item>
+        </a-assets>
+      <a-entity obj-model="obj: #mini-house-obj; mtl: #mini-house-mtl"></a-entity>
+
+      <!--add a camera that will allow you to use keys WASDF to move-->
+
+      <a-camera></a-camera>
+
+      <!--enable viewer to look at stuff -->
+      <a-entity camera look-controls></a-entity>
+
+      <!--add a sky color-->
+
+      <a-sky color="#b2b2ff"></a-sky>
+
+      </a-scene>
+
+  </body>
+</html>
